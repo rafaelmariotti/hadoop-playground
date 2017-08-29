@@ -12,7 +12,11 @@ class MRFriendsByAge(MRJob):
         for x in numFriends:
             total += x
             numElements += 1
-            
+
+        #list_numFriends = list(numFriends)
+        #total = sum(list_numFriends)
+        #numElements = len(list_numFriends)
+
         yield age, total / numElements
 
 
