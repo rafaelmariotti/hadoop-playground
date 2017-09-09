@@ -1,6 +1,6 @@
 from mrjob.job import MRJob
 
-class MRMinTemperature(MRJob):
+class MRMaxTemperature(MRJob):
 
     def _make_fahrenheit(self, tenthsOfCelsius):
         celsius = float(tenthsOfCelsius) / 10.0
@@ -18,4 +18,4 @@ class MRMinTemperature(MRJob):
 
 
 if __name__ == '__main__':
-    MRMinTemperature.run()
+    MRMaxTemperature.run()

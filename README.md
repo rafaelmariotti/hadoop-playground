@@ -7,3 +7,5 @@ Playground from Hadoop, with some helpful scripts
 		python mapReduce/friends-by-age.py dataset/fakeFriends/fakefriends.csv
 		python mapReduce/min-temperatures.py dataset/1800temperatures/1800.csv
 		python mapReduce/max-temperatures.py dataset/1800temperatures/1800.csv
+		python word-frequency.py dataset/books/book_example.txt
+		python word-frequency-sorted.py dataset/books/book_example.txt
