@@ -9,3 +9,6 @@ Playground from Hadoop, with some helpful scripts
 		python mapReduce/max-temperatures.py dataset/1800temperatures/1800.csv
 		python word-frequency.py dataset/books/book_example.txt
 		python word-frequency-sorted.py dataset/books/book_example.txt
+        python word-frequency-combiner.py dataset/books/book_example.txt
+        python spend-by-customer.py dataset/customerOrders/customer-orders.csv
+        python spend-by-customer-sorted.py dataset/customerOrders/customer-orders.csv
