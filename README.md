@@ -1,5 +1,9 @@
 # hadoop-playground
-Playground from Hadoop, with some helpful scripts
+Playground from Hadoop, with some helpful Python 3.5 scripts
+
+## Configure
+
+        pip install mrjob
 
 ## HowTo
 
@@ -19,4 +23,10 @@ Playground from Hadoop, with some helpful scripts
         python marvel-most-popular-superhero.py dataset/marvelHeroes/marvel-graph.txt --names dataset/marvelHeroes/marvel-names.txt
         python marvel-breadth-first-search-distance-between-superheroes-prepare.py 2548 ; python marvel-breadth-first-search-distance-between-superheroes.py --target 100 dataset/marvelHeroes/breadth-first-search-2548.txt > iteration-0.output ; python marvel-breadth-first-search-distance-between-superheroes.py --target 100 iteration-0.output > iteration-1.output
         python movie-similarities.py dataset/movieLens/u.data --movies dataset/movieLens/u.item
-        
+
+## Running using EMR from AWS (export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY variables)
+        python movie-similarities.py --movies dataset/movieLens/u.item dataset/movieLens/u.data -r emr
+        python movie-similarities.py --movies dataset/movieLens/u.item dataset/movieLens/u.data -r emr --num-core-instances 4 #https://pythonhosted.org/mrjob/guides/emr-opts.html#option-num_core_instances
+
+## Retrieve AWS EMR errors (read more)[http://mrjob.readthedocs.io/en/latest/index.html]
+        mrjob diagnose cluster_ID #for instance, j-1SHKB7PLLVKYP 
