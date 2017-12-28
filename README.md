@@ -30,3 +30,8 @@ Playground from Hadoop, with some helpful Python 3.5 scripts
 
 ## Retrieve AWS EMR errors ([click here to learn more about it](http://mrjob.readthedocs.io/en/latest/index.html))
         mrjob diagnose cluster_ID #for instance, j-1SHKB7PLLVKYP 
+
+## Special thanks
+
+Scripts built from "Taming Big Data with MapReduce and Hadoop - hands on" course, by [Sundog Education with Frank Kane](http://sundog-education.com/).
+
